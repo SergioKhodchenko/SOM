@@ -1,2 +1,2 @@
-# dehack2018tr
-dehack in Trostjanets with AVK
+# SOM
+Site for SOM Production
