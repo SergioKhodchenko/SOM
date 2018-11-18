@@ -82,7 +82,7 @@ gulp.task("svg-sprite", () =>
 gulp.task("images", () =>
   gulp
     .src([
-      "./src/img/**/*.{png,jpg,jpeg,svg,ico,gif}",
+      "./src/img/**/*.{png,jpg,jpeg,svg,ico,gif,mov}",
       "!./src/img/sprite/**/*.*"
     ])
     .pipe(

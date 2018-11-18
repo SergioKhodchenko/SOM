@@ -1,4 +1,82 @@
 header {
-  height: 200px;
-  background-color: crimson;
+  height: 100vh;
+  position: relative;
+}
+.video-container {
+  height: 100%;
+  overflow: hidden;
+  &__video {
+    width: 100%;
+  }
+}
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+  &__image {
+    width: 100%;
+  }
+}
+.welcome {
+  position: absolute;
+  top: 180px;
+  left: 0;
+  height: 600px;
+  width: 450px;
+  background-color: $light-bgr;
+  padding: 200px 0;
+  &__text {
+    margin: 0 auto;
+    width: 70%;
+    font-size: $title-middle-font-size;
+    font-weight: $black;
+  }
+  &__cursive-text {
+    font-family: $bottomfooter-font;
+    font-size: $title-font-size;
+  }
+}
+.menu-button {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  &__image {
+    width: 100%;
+  }
+}
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 22%;
+  height: 600px;
+  background-color: rgba(209, 213, 226, 0.2);
+  &__list {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  &__item {
+    height: 50px;
+    width: 100%;
+    padding: 10px 30px;
+    margin: 10px 0;
+    font-size: $title-font-size;
+    font-weight: $medium;
+    color: $light-color;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(209, 213, 226, 0.3);
+    }
+  }
 }

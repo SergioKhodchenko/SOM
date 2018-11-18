@@ -2,7 +2,7 @@
 @import 'utils/visually-hidden';
 @import 'utils/variables';
 @import 'utils/mixins';
-@import 'utils/placeholders';
+// @import 'utils/placeholders';
 
 /* Base */
 @import 'base/normalize';
@@ -12,7 +12,6 @@
 
 /* Layout */
 @import 'layout/header';
-@import 'layout/menu-section';
 @import 'layout/about-section';
 @import 'layout/slider-section';
 @import 'layout/products-section';
