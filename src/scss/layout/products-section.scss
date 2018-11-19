@@ -1,4 +1,35 @@
-.products-section {
-  height: 200px;
-  color: crimson;
+.products {
+  &-section {
+    height: auto;
+  }
+  &__container {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__text {
+    margin: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  &__title {
+    margin: 0 0 40px;
+    font-size: $title-middle-font-size;
+    font-weight: $bold;
+  }
+  &__describe {
+    font-size: $title-font-size;
+    font-weight: $light;
+    width: 70%;
+  }
+  &__image {
+    display: block;
+    height: 100%;
+    width: 50%;
+  }
 }

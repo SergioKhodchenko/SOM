@@ -1,4 +1,32 @@
-.about-section {
-  height: 200px;
-  color: blue;
+.about {
+  &-container {
+    height: 85%;
+    width: 90%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 100px;
+    top: 69px;
+    box-shadow: 2px 2px 6px 5px rgba(0, 0, 0, 0.18);
+  }
+  &__text {
+    margin: 0 auto;
+    width: 65%;
+    font-size: $title-middle-font-size;
+    font-weight: $black;
+    &::after {
+      width: 40px;
+      height: 40px;
+      display: block;
+      content: "";
+      background-image: url(../img/smile.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  &__cursive-text {
+    font-family: $bottomfooter-font;
+    font-size: $title-font-size;
+  }
 }

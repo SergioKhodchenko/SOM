@@ -1,1 +1,16 @@
 @charset "UTF-8";
+
+.shift-right {
+    transition-property: transform;
+    transition-duration: 2s;
+    transform: translateX(40%);
+}
+
+.pre-shift-from-left {
+    transform: translateX(-100%);
+}
+.shift-from-left {
+    transition-property: transform;
+    transition-duration: 1.2s;
+    transform: translateX(0%);
+}

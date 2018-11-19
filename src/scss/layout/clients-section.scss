@@ -1,4 +1,28 @@
-.clients-section {
-  height: 200px;
-  color: crimson;
+.clients {
+  &-section {
+    height: auto;
+    padding: 10px 0 70px;
+  }
+  &__title {
+    font-size: $title-big-font-size;
+    margin: 0 auto 20px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    text-align: center;
+    color: $dark-color;
+  }
+  &__list {
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 70%;
+    display: block;
+    text-align: justify;
+  }
+  &__item {
+    margin: 5px 30px;
+    display: inline-block;
+  }
+  &__picture {
+    width: 120px;
+  }
 }
