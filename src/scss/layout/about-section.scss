@@ -3,15 +3,16 @@
     height: 85%;
     width: 90%;
     position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
+    animation: fadeInUp 1s cubic-bezier(0.215, 0.610, 0.355, 1);
     right: 100px;
-    top: 69px;
+    top: 89px;
     box-shadow: 2px 2px 6px 5px rgba(0, 0, 0, 0.18);
   }
   &__text {
     margin: 0 auto;
+    animation: fadeInUp 1.7s cubic-bezier(0.215, 0.610, 0.355, 1);
     width: 65%;
     font-size: $title-middle-font-size;
     font-weight: $black;
@@ -26,6 +27,7 @@
     }
   }
   &__cursive-text {
+    animation: fadeInUp 3.6s cubic-bezier(0.215, 0.610, 0.355, 1);
     font-family: $bottomfooter-font;
     font-size: $title-font-size;
   }
