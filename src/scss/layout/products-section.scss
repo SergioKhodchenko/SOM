@@ -1,10 +1,12 @@
 .products {
   &-section {
     height: auto;
+    min-height: 800px;
+    margin-bottom: 60px;
   }
   &__container {
     height: 350px;
-    display: flex;
+    animation: fadeInUp 1s cubic-bezier(0.215, 0.610, 0.355, 1);
     justify-content: center;
     align-items: center;
   }
@@ -16,20 +18,63 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    &:hover {
+      color: rgb(168, 92, 127);
+    }
   }
   &__title {
+    animation: fadeInLeft 2.4s cubic-bezier(0.215, 0.610, 0.355, 1);
     margin: 0 0 40px;
     font-size: $title-middle-font-size;
     font-weight: $bold;
   }
   &__describe {
+    animation: fadeInUp 2.2s cubic-bezier(0.215, 0.610, 0.355, 1);
     font-size: $title-font-size;
     font-weight: $light;
     width: 70%;
   }
-  &__image {
-    display: block;
+  &__img-container {
+    overflow: hidden;
     height: 100%;
     width: 50%;
+    &:hover .overlay {
+      transform: translateY(0%);
+    }
   }
+  &__image {
+    position: relative;
+    transform: translateY(-100%);
+    height: 100%;
+    width: 100%;
+  }
+  &__button {
+    background: none;
+    outline: none;
+    font-weight: $light;
+    letter-spacing: 2px;
+    border: 1px solid $light-color;
+    color: $light-color;
+    text-transform: uppercase;
+    padding: 10px;
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      background: $light-color;
+      color: $text-color;
+      transform: scale(1.05);
+    }
+  }
+}
+.overlay {
+  height: 100%;
+  background-color: rgba(219, 139, 176, 0.4);
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  position: relative;
+  z-index: 3;
+  justify-items: center;
+  align-items: center;
+  transform: translateY(101%);
+  transition: all 0.3s ease-in-out;
 }
